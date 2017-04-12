@@ -1,23 +1,22 @@
 {
   "name": "stylus-loader",
+  "description": "Stylus loader for Depmap"<
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "pug": "^2.0.0-beta11",
     "stylus": "^0.54.5"
   },
+  "homepage": "https://github.com/depmap/stylus-loader#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hhsnopek/pug-loader.git"
+    "url": "git+https://github.com/depmap/stylus-loader.git"
   },
+  "author": "Henry Snopek <hhsnopek@gmail.com> (http://hhsnopek.com/)",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hhsnopek/pug-loader/issues"
-  },
-  "homepage": "https://github.com/hhsnopek/pug-loader#readme",
-  "description": ""
+    "url": "https://github.com/depmap/stylus-loader/issues"
+  }
 }
