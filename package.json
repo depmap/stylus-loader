@@ -1,6 +1,6 @@
 {
-  "name": "stylus-loader",
-  "description": "Stylus loader for Depmap"<
+  "name": "@depmap/stylus-loader",
+  "description": "Stylus loader for Depmap",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {

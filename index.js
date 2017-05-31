@@ -6,8 +6,8 @@ const keywords = ['@import', '@require']
 
 module.exports = {
   meta: {
-    ext: 'styl',
-    outExt: 'css',
+    ext: '.styl',
+    outExt: '.css',
     outDir: 'css'
   },
   parse: (file, meta) => {
