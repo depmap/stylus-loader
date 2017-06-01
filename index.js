@@ -12,12 +12,15 @@ module.exports = {
   },
   parse: (file, meta) => {
     const deps = []
+    let relativeDir = file.split('/').slice(0, -1).join('/')
     fs.readFileSync(file).toString().split('\n').forEach(line => {
       if (line.indexOf(keywords[0]) > -1 || line.indexOf(keywords[1]) > -1) {
         let words = line.split(' ')
-        let file = words[words.length - 1]
-        let meta = path.parse(file)
-        deps.push(`styl_${meta.name.replace(/'/g, '')}`)
+        let dep = words[words.length - 1].replace(/\'|\"/g, '')
+        if (dep.indexOf(meta.ext) === -1)
+          dep = `${dep}${meta.ext}`
+
+        deps.push(path.join(relativeDir, dep))
       }
     })
 
